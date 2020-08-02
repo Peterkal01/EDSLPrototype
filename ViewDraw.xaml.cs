@@ -16,23 +16,22 @@ using System.Windows.Shapes;
 namespace EDSLPrototypeFinal
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ViewDraw.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ViewDraw : Page
     {
-        public MainWindow()
+        public ViewDraw()
         {
             InitializeComponent();
         }
-        private void buttonclickSeason(object sender, RoutedEventArgs e)
+
+        private void buttonclickDiv1Draw(object sender, RoutedEventArgs e)
         {
-            Main.Content = new SeasonPage();
+            Div1Draw.Visibility = Visibility.Visible;
+            DrawHeader.Visibility = Visibility.Visible;
         }
-        private void buttonclickDraw(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new ViewDraw();
-        }
-       
-       
+
+        
+
     }
 }

@@ -1,0 +1,31 @@
+﻿<Page x:Class="EDSLPrototypeFinal.SeasonPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EDSLPrototypeFinal"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+       Title="EDSL System" Height="700.5" Width="1151" Background="White">
+
+    <Grid>
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="575" Margin="135,84,0,0" VerticalAlignment="Top" Width="998" NavigationUIVisibility="Hidden"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,31,0,0" TextWrapping="Wrap" Text="Enter SeasonID:" VerticalAlignment="Top" Width="87"/>
+        <Image HorizontalAlignment="Left" Height="0" Margin="354,181,0,0" VerticalAlignment="Top" Width="28"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="122,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="60,59,0,0" VerticalAlignment="Top" Width="956"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Season Round Dates:"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="102,168,0,0" TextWrapping="Wrap" Text="Start Date:" VerticalAlignment="Top"/>
+        <!--StartDateInput-->
+        <TextBox Name="userInput" LostFocus="UserInput_LostFocus" HorizontalAlignment="Left" Height="23" Margin="178,167,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="watermarkText" GotFocus="WatermarkText_GotFocus" Text="DD/MM/YYYY" HorizontalAlignment="Left" Height="23" Margin="178,167,0,0" VerticalAlignment="Top" Width="120"/>
+        <!--EndDateInputs-->
+        <TextBlock HorizontalAlignment="Left" Margin="614,171,0,0" TextWrapping="Wrap" Text="End Date:" VerticalAlignment="Top"/>
+        <TextBox Name="userInput2" LostFocus="UserInput_LostFocus2" HorizontalAlignment="Left" Height="24" Margin="692,168,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="watermarkText2" GotFocus="WatermarkText_GotFocus2" Text="DD/MM/YYYY" HorizontalAlignment="Left" Height="25" Margin="692,167,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Save Dates" HorizontalAlignment="Left" Margin="434,280,0,0" VerticalAlignment="Top" Width="110" Height="30"/>
+        <Button Content="Save Season" HorizontalAlignment="Left" Margin="822,511,0,0" VerticalAlignment="Top" Width="116" Height="34"/>
+
+
+    </Grid>
+</Page>

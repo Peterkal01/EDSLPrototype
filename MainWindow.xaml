@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EDSLPrototypeFinal"
         mc:Ignorable="d"
-        Title="EDSL System" Height="450" Width="800">
-    <Grid RenderTransformOrigin="0.172,0.21">
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Season" HorizontalAlignment="Left" Margin="31,31,0,0" VerticalAlignment="Top" Width="75"/>
+        Title="EDSL System" Height="700.5" Width="1151">
+    <Grid RenderTransformOrigin="0.5,0.494">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="649" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Season" HorizontalAlignment="Left" Margin="31,31,0,0" VerticalAlignment="Top" Width="75" Click="buttonclickSeason"/>
         <Button Content="Results" HorizontalAlignment="Left" Margin="31,68,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.044,0.698"/>
         <Button Content="Ladder" HorizontalAlignment="Left" Margin="31,108,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Draw" HorizontalAlignment="Left" Margin="31,147,0,0" VerticalAlignment="Top" Width="75"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="69" Margin="135,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="647"/>
+        <Button Content="Draw" HorizontalAlignment="Left" Margin="31,147,0,0" VerticalAlignment="Top" Width="75" Click="buttonclickDraw"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="69" Margin="135,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="998"/>
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="575" Margin="135,84,0,0" VerticalAlignment="Top" Width="998" NavigationUIVisibility="Hidden"/>
+        <TextBlock HorizontalAlignment="Left" Margin="462,24,0,0" TextWrapping="Wrap" Text="Eastern District Soccer League" VerticalAlignment="Top" FontSize="25"/>
 
     </Grid>
 </Window>
