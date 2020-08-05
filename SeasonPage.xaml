@@ -19,12 +19,9 @@
         <!--StartDateInput-->
         <TextBox Name="userInput" LostFocus="UserInput_LostFocus" HorizontalAlignment="Left" Height="23" Margin="178,167,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="watermarkText" GotFocus="WatermarkText_GotFocus" Text="DD/MM/YYYY" HorizontalAlignment="Left" Height="23" Margin="178,167,0,0" VerticalAlignment="Top" Width="120"/>
-        <!--EndDateInputs-->
-        <TextBlock HorizontalAlignment="Left" Margin="614,171,0,0" TextWrapping="Wrap" Text="End Date:" VerticalAlignment="Top"/>
-        <TextBox Name="userInput2" LostFocus="UserInput_LostFocus2" HorizontalAlignment="Left" Height="24" Margin="692,168,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="watermarkText2" GotFocus="WatermarkText_GotFocus2" Text="DD/MM/YYYY" HorizontalAlignment="Left" Height="25" Margin="692,167,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Save Dates" HorizontalAlignment="Left" Margin="434,280,0,0" VerticalAlignment="Top" Width="110" Height="30"/>
-        <Button Content="Save Season" HorizontalAlignment="Left" Margin="822,511,0,0" VerticalAlignment="Top" Width="116" Height="34"/>
+        <Button Content="Save Dates" HorizontalAlignment="Left" Margin="370,181,0,0" VerticalAlignment="Top" Width="110" Height="30"/>
+        <Button Content="Save Season" HorizontalAlignment="Left" Margin="654,208,0,0" VerticalAlignment="Top" Width="116" Height="34"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="0" Margin="501,260,0,0" VerticalAlignment="Top" Width="37"/>
 
 
     </Grid>

@@ -40,21 +40,7 @@ namespace EDSLPrototypeFinal
                 watermarkText.Visibility = System.Windows.Visibility.Visible;
             }
         }
-        private void WatermarkText_GotFocus2(object sender, RoutedEventArgs e)
-        {
-            watermarkText2.Visibility = System.Windows.Visibility.Collapsed;
-            userInput2.Visibility = System.Windows.Visibility.Visible;
-            userInput2.Focus();
-        }
-
-        private void UserInput_LostFocus2(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(userInput2.Text))
-            {
-                userInput2.Visibility = System.Windows.Visibility.Collapsed;
-                watermarkText2.Visibility = System.Windows.Visibility.Visible;
-            }
-        }
+        
     }
 
 

@@ -25,13 +25,28 @@ namespace EDSLPrototypeFinal
             InitializeComponent();
         }
 
-        private void buttonclickDiv1Draw(object sender, RoutedEventArgs e)
+        private void viewDraw(object sender, RoutedEventArgs e)
         {
-            Div1Draw.Visibility = Visibility.Visible;
-            DrawHeader.Visibility = Visibility.Visible;
+            Main.Content = new ViewDraw();
         }
 
-        
+        private void buttonclickDraw(object sender, RoutedEventArgs e)
+        {
+            Draw.Visibility = Visibility.Visible;
+            DrawHeader.Visibility = Visibility.Visible;
+
+        }
+
+
+        private void buttonClickLadder(object sender, RoutedEventArgs e)
+        {
+            Ladder.Visibility = Visibility.Visible;
+            LadderHeader.Visibility = Visibility.Visible;
+            Cover.Visibility = Visibility.Visible;
+            Cover2.Visibility = Visibility.Visible;
+        }
+
+
 
     }
 }
