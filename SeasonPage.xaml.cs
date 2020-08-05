@@ -25,23 +25,35 @@ namespace EDSLPrototypeFinal
             InitializeComponent();
         }
 
-        private void WatermarkText_GotFocus(object sender, RoutedEventArgs e)
+        private void buttonclickCreate(object sender, RoutedEventArgs e)
         {
-            watermarkText.Visibility = System.Windows.Visibility.Collapsed;
-            userInput.Visibility = System.Windows.Visibility.Visible;
-            userInput.Focus();
+            SeasonDivId.Visibility = Visibility.Visible;
+            SeasonDivIdUserInput.Visibility = Visibility.Visible;
+            NoOfRounds.Visibility = Visibility.Visible;
+            NoOfRoundsUserInput.Visibility = Visibility.Visible;
+            StartDate.Visibility = Visibility.Visible;           
+            buttonConfirm.Visibility = Visibility.Visible;
+            enterDates.Visibility = Visibility.Visible;
         }
 
-        private void UserInput_LostFocus(object sender, RoutedEventArgs e)
+        /*private void buttonclickConfirm(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(userInput.Text))
-            {
-                userInput.Visibility = System.Windows.Visibility.Collapsed;
-                watermarkText.Visibility = System.Windows.Visibility.Visible;
-            }
+            DateList.Items.Add(enterDates.Text);
+        }*/
+
+        private void buttonclickRemoveDate(object sender, RoutedEventArgs e)
+        {
+            DateList.Items.Remove(DateList.SelectedItem);
         }
-        
+
+        private void buttonclickConfirm(object sender, RoutedEventArgs e)
+        {
+            DateList.Visibility = Visibility.Visible;
+            removeDateButton.Visibility = Visibility.Visible;
+
+        }
     }
+
 
 
 }

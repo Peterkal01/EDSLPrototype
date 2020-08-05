@@ -24,13 +24,13 @@
             <ComboBoxItem Content="Division 2"></ComboBoxItem>
             <ComboBoxItem Content="Division 3"></ComboBoxItem>
         </ComboBox>
-        <TextBlock FontSize="24" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Reports" VerticalAlignment="Top" FontWeight="Bold" Height="38" Width="162" Margin="514,-1,0,0" Grid.ColumnSpan="2"/>
-        <Button Content="Ok" HorizontalAlignment="Left" Margin="170,53,0,0" VerticalAlignment="Top" Width="43" Height="23" Click="buttonclickDraw"/>
+        <TextBlock FontSize="24" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Reports" VerticalAlignment="Top" FontWeight="Bold" Height="38" Width="162" Margin="3,-8,0,0"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="170,53,0,0" VerticalAlignment="Top" Width="43" Height="23" Click="buttonclickDraw"/>
         <TextBlock FontSize="15" HorizontalAlignment="Left" Margin="3,30,0,0" TextWrapping="Wrap" Text="View Draw" VerticalAlignment="Top" RenderTransformOrigin="0.483,0.43" Height="18" Width="73"/>
         <TextBlock FontSize="15" HorizontalAlignment="Left" Margin="3,126,0,0" TextWrapping="Wrap" Text="View Ladder" VerticalAlignment="Top"/>
         <Image Name="Draw" Margin="221,106,311,221" Stretch="Fill" Source="EDSLviewdraw (2).JPG" Grid.ColumnSpan="2" Visibility="Hidden"/>
         <TextBlock Name="DrawHeader" HorizontalAlignment="Left" Margin="220,5,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="24" Text="EDSL 2019 - 2020 Division 1 Draw" VerticalAlignment="Top" Visibility="Hidden"/>
-        <Button Content="Ok" HorizontalAlignment="Left" Margin="170,151,0,0" VerticalAlignment="Top" Width="43" Height="23" Click="buttonClickLadder"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="170,151,0,0" VerticalAlignment="Top" Width="43" Height="23" Click="buttonClickLadder"/>
         <Frame x:Name="Cover2" HorizontalAlignment="Left" Height="42" Margin="542,10,0,0" VerticalAlignment="Top" Width="76" NavigationUIVisibility="Hidden" Background="White" Visibility="Hidden"/>
         <TextBlock Name="LadderHeader" HorizontalAlignment="Left" Margin="220,5,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="24" Text="EDSL 2019 - 2020 Division 1 Ladder" VerticalAlignment="Top" Visibility="Hidden"/>
         <Frame x:Name="Cover" HorizontalAlignment="Left" Height="401" Margin="218,62,0,0" VerticalAlignment="Top" Width="659" NavigationUIVisibility="Hidden" Background="White" Visibility="Hidden"/>

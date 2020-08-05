@@ -10,18 +10,49 @@
 
     <Grid>
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="575" Margin="135,84,0,0" VerticalAlignment="Top" Width="998" NavigationUIVisibility="Hidden"/>
-        <TextBlock HorizontalAlignment="Left" Margin="30,31,0,0" TextWrapping="Wrap" Text="Enter SeasonID:" VerticalAlignment="Top" Width="87"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,31,0,0" TextWrapping="Wrap" Text="Enter New SeasonID:" VerticalAlignment="Top" Width="117" Height="23"/>
         <Image HorizontalAlignment="Left" Height="0" Margin="354,181,0,0" VerticalAlignment="Top" Width="28"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="122,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Separator HorizontalAlignment="Left" Height="100" Margin="60,59,0,0" VerticalAlignment="Top" Width="956"/>
-        <TextBlock HorizontalAlignment="Left" Margin="46,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Season Round Dates:"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="102,168,0,0" TextWrapping="Wrap" Text="Start Date:" VerticalAlignment="Top"/>
-        <!--StartDateInput-->
-        <TextBox Name="userInput" LostFocus="UserInput_LostFocus" HorizontalAlignment="Left" Height="23" Margin="178,167,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="watermarkText" GotFocus="WatermarkText_GotFocus" Text="DD/MM/YYYY" HorizontalAlignment="Left" Height="23" Margin="178,167,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Save Dates" HorizontalAlignment="Left" Margin="370,181,0,0" VerticalAlignment="Top" Width="110" Height="30"/>
-        <Button Content="Save Season" HorizontalAlignment="Left" Margin="654,208,0,0" VerticalAlignment="Top" Width="116" Height="34"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="0" Margin="501,260,0,0" VerticalAlignment="Top" Width="37"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.046,0.739"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="10,84,0,0" VerticalAlignment="Top" Width="956"/>
+        <TextBlock Name="StartDate" Visibility="Hidden" HorizontalAlignment="Left" Margin="93,260,0,0" TextWrapping="Wrap" Text="Start Date:" VerticalAlignment="Top"/>
+        <Button Content="Save Dates" HorizontalAlignment="Left" Margin="871,462,0,0" VerticalAlignment="Top" Width="95" Height="26"/>
+        <Button Content="Save Season" HorizontalAlignment="Left" Margin="871,506,0,0" VerticalAlignment="Top" Width="95" Height="26"/>
+        <TextBlock HorizontalAlignment="Left" Margin="136,68,0,0" TextWrapping="Wrap" Text="or" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,100,0,0" TextWrapping="Wrap" Text="Select Existing Season:" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="152,96,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Season 1"></ComboBoxItem>
+            <ComboBoxItem Content="Season 2"></ComboBoxItem>
+            <ComboBoxItem Content="Season 3"></ComboBoxItem>
+        </ComboBox>
+        <Button Content="Create" HorizontalAlignment="Left" Margin="280,34,0,0" VerticalAlignment="Top" Width="75" Click="buttonclickCreate"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="280,96,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock Name="SeasonDivId" Visibility="Hidden" HorizontalAlignment="Left" Margin="92,168,0,0" TextWrapping="Wrap" Text="DivisionID:" VerticalAlignment="Top"/>
+        <TextBox Name="SeasonDivIdUserInput" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="170,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.046,0.739"/>
+        <TextBlock Name="NoOfRounds" Visibility="Hidden" HorizontalAlignment="Left" Margin="69,216,0,0" TextWrapping="Wrap" Text="No. of Rounds:" VerticalAlignment="Top"/>
+        <Button Name="buttonConfirm" Visibility="Hidden" Content="Confirm" HorizontalAlignment="Left" Margin="215,312,0,0" VerticalAlignment="Top" Width="75" Click="buttonclickConfirm"/>
+        <Separator HorizontalAlignment="Left" Height="0" Margin="771,282,0,0" VerticalAlignment="Top" Width="37"/>
+        <TextBox Name="NoOfRoundsUserInput" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="170,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
+        <ListBox Name="DateList" Visibility="Hidden" HorizontalAlignment="Left" Height="304" Margin="398,184,0,0" VerticalAlignment="Top" Width="211">
+            <ListBoxItem Content="01/01/2021"></ListBoxItem>
+            <ListBoxItem Content="08/01/2021"></ListBoxItem>
+            <ListBoxItem Content="15/01/2021"></ListBoxItem>
+            <ListBoxItem Content="22/01/2021"></ListBoxItem>
+            <ListBoxItem Content="29/01/2021"></ListBoxItem>
+            <ListBoxItem Content="5/01/2021"></ListBoxItem>
+            <ListBoxItem Content="12/01/2021"></ListBoxItem>
+            <ListBoxItem Content="19/01/2021"></ListBoxItem>
+            <ListBoxItem Content="26/01/2021"></ListBoxItem>
+            <ListBoxItem Content="25/01/2021"></ListBoxItem>
+        </ListBox>
+
+        <TextBox Name="enterDates" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="170,260,0,0" TextWrapping="Wrap" Text="DD/MM/YYYY" VerticalAlignment="Top" Width="120"/>
+        <Button Name="removeDateButton" Visibility="Hidden" Content="Remove" HorizontalAlignment="Left" Margin="534,491,0,0" VerticalAlignment="Top" Width="75" Click="buttonclickRemoveDate"/>
+
+
+
+
+
+
 
 
     </Grid>
