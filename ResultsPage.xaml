@@ -9,7 +9,76 @@
        Title="EDSL System" Height="700.5" Width="1151" Background="White">
 
     <Grid>
-        <Frame x:Name="Main" HorizontalAlignment="Left" Height="575" Margin="135,84,0,0" VerticalAlignment="Top" Width="998" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="576" Margin="135,74,0,0" VerticalAlignment="Top" Width="998" NavigationUIVisibility="Hidden"/>
+        <TextBlock FontSize="24" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Round Results" VerticalAlignment="Top" FontWeight="Bold" Height="38" Width="162" Margin="10,0,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,52,0,0" TextWrapping="Wrap" Text="Select Season:" VerticalAlignment="Top" Width="100" Height="22"/>
+        <ComboBox HorizontalAlignment="Left" Margin="152,52,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Season 2018"></ComboBoxItem>
+            <ComboBoxItem Content="Season 2019"></ComboBoxItem>
+            <ComboBoxItem Content="Season 2020"></ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="27,94,0,0" TextWrapping="Wrap" Text="Select Division:" VerticalAlignment="Top" Width="100" Height="22"/>
+        <ComboBox HorizontalAlignment="Left" Margin="152,94,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Division 1"></ComboBoxItem>
+            <ComboBoxItem Content="Division 2"></ComboBoxItem>
+            <ComboBoxItem Content="Division 3"></ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="35,138,0,0" TextWrapping="Wrap" Text="Select Round:" VerticalAlignment="Top" Width="100" Height="22"/>
+        <ComboBox HorizontalAlignment="Left" Margin="152,138,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Round 1"></ComboBoxItem>
+            <ComboBoxItem Content="Round 2"></ComboBoxItem>
+            <ComboBoxItem Content="Round 3"></ComboBoxItem>
+            <ComboBoxItem Content="Round 4"></ComboBoxItem>
+            <ComboBoxItem Content="Round 5"></ComboBoxItem>
+            <ComboBoxItem Content="Round 6"></ComboBoxItem>
+            <ComboBoxItem Content="Round 7"></ComboBoxItem>
+            <ComboBoxItem Content="Round 8"></ComboBoxItem>
+            <ComboBoxItem Content="Round 9"></ComboBoxItem>
+            <ComboBoxItem Content="Round 10"></ComboBoxItem>
+
+        </ComboBox>
+        <Button Content="View Results" HorizontalAlignment="Left" Margin="196,190,0,0" VerticalAlignment="Top" Width="76" Click="buttonclickViewResults"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="10,190,0,0" VerticalAlignment="Top" Width="1040"/>
+        <ListBox  Name="homeTeamList" Visibility="Hidden" HorizontalAlignment="Left" Height="153" Margin="82,295,0,0" VerticalAlignment="Top" Width="108">
+            <ListBoxItem Content="Wantirna"></ListBoxItem>
+            <ListBoxItem Content="Mount Waverly-A"></ListBoxItem>
+            <ListBoxItem Content="Scorsby-A"></ListBoxItem>
+            <ListBoxItem Content="Mitcham"></ListBoxItem>
+            <ListBoxItem Content="Ringwood-A"></ListBoxItem>
+            <ListBoxItem Content="Wonga Park-A"></ListBoxItem>
+            <ListBoxItem Content="Mount Evelyn-A"></ListBoxItem>
+        </ListBox>
+        <ListBox Name="awayTeamList" Visibility="Hidden" HorizontalAlignment="Left" Height="153" Margin="190,295,0,0" VerticalAlignment="Top" Width="137">
+            <ListBoxItem Content="Bye"/>
+            <ListBoxItem Content="Oakleigh-A"/>
+            <ListBoxItem Content="Ferntree Gully-A"/>
+            <ListBoxItem Content="Murrumbeena-A"/>
+            <ListBoxItem Content="Beaconsfield Upper-A"/>
+            <ListBoxItem Content="Belgrave-A"/>
+            <ListBoxItem Content="LilyDale-A"/>
+        </ListBox>
+        <TextBlock Name="game1" Visibility="Hidden" HorizontalAlignment="Left" Margin="34,298,0,0" TextWrapping="Wrap" Text="Game 1:" VerticalAlignment="Top"/>
+        <TextBlock Name="game2" Visibility="Hidden" HorizontalAlignment="Left" Margin="34,319,0,0" TextWrapping="Wrap" Text="Game 2:" VerticalAlignment="Top"/>
+        <TextBlock Name="game3" Visibility="Hidden" HorizontalAlignment="Left" Margin="34,338,0,0" TextWrapping="Wrap" Text="Game 3:" VerticalAlignment="Top"/>
+        <TextBlock Name="game4" Visibility="Hidden" HorizontalAlignment="Left" Margin="34,358,0,0" TextWrapping="Wrap" Text="Game 4:" VerticalAlignment="Top"/>
+        <TextBlock Name="game5" Visibility="Hidden" HorizontalAlignment="Left" Margin="34,379,0,0" TextWrapping="Wrap" Text="Game 5:" VerticalAlignment="Top"/>
+        <TextBlock Name="game6" Visibility="Hidden" HorizontalAlignment="Left" Margin="34,398,0,0" TextWrapping="Wrap" Text="Game 6:" VerticalAlignment="Top"/>
+        <TextBlock Name="game7" Visibility="Hidden" HorizontalAlignment="Left" Margin="34,419,0,0" TextWrapping="Wrap" Text="Game 7:" VerticalAlignment="Top"/>
+        <TextBlock Name="headerRound" Visibility="Hidden" HorizontalAlignment="Left" FontSize="16" Margin="169,252,0,0" TextWrapping="Wrap" Text="Round 1" FontWeight="Bold" VerticalAlignment="Top"/>
+        <ListBox Name="scoreList" Visibility="Hidden" HorizontalAlignment="Left" Height="153" Margin="327,295,0,0" VerticalAlignment="Top" Width="54">
+            <ListBoxItem Content=" - "></ListBoxItem>
+            <ListBoxItem Content="2 - 4"></ListBoxItem>
+            <ListBoxItem Content="2 - 1"></ListBoxItem>
+            <ListBoxItem Content="3 - 2"></ListBoxItem>
+            <ListBoxItem Content="0 - 0"></ListBoxItem>
+            <ListBoxItem Content="0 - 1"></ListBoxItem>
+            <ListBoxItem Content="7 - 0"></ListBoxItem>
+        </ListBox>
+        <Button Name="updateLadderButton" Visibility="Hidden" Content="Update Ladder" HorizontalAlignment="Left" Margin="812,490,0,0" VerticalAlignment="Top" Width="104" Height="38"/>
+        <Button Name="updateResultsButton" Visibility="Hidden" Content="Update Results" HorizontalAlignment="Left" Margin="812,447,0,0" VerticalAlignment="Top" Width="104" Height="38"/>
+        <TextBlock Name="homeTeam" Visibility="Hidden" HorizontalAlignment="Left" FontWeight="Bold" Margin="82,279,0,0" TextWrapping="Wrap" Text="Home Team" VerticalAlignment="Top"/>
+        <TextBlock Name="awayTeam" Visibility="Hidden" HorizontalAlignment="Left" FontWeight="Bold" Margin="190,279,0,0" TextWrapping="Wrap" Text="Away Team" VerticalAlignment="Top"/>
+        <TextBlock Name="score" Visibility="Hidden" HorizontalAlignment="Left" Margin="327,279,0,0" FontWeight="Bold" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

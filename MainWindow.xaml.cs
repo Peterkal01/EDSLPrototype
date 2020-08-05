@@ -31,7 +31,14 @@ namespace EDSLPrototypeFinal
         private void buttonclickDraw(object sender, RoutedEventArgs e)
         {
             Main.Content = new ViewDraw();
-        }      
-        
+        }
+
+        private void buttonclickResults(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Results();
+        }
+
+
+
     }
 }

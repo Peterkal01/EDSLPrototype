@@ -34,6 +34,9 @@ namespace EDSLPrototypeFinal
             StartDate.Visibility = Visibility.Visible;           
             buttonConfirm.Visibility = Visibility.Visible;
             enterDates.Visibility = Visibility.Visible;
+            createDrawButton.Visibility = Visibility.Visible;
+            saveDatesButton.Visibility = Visibility.Visible;
+            saveSeasonButton.Visibility = Visibility.Visible;
         }
 
         /*private void buttonclickConfirm(object sender, RoutedEventArgs e)
@@ -50,6 +53,7 @@ namespace EDSLPrototypeFinal
         {
             DateList.Visibility = Visibility.Visible;
             removeDateButton.Visibility = Visibility.Visible;
+            
 
         }
     }
