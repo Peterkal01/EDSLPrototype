@@ -14,8 +14,8 @@
         </Grid.ColumnDefinitions>
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="575" Margin="135,84,0,0" VerticalAlignment="Top" Width="998" NavigationUIVisibility="Hidden"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,31,0,0" TextWrapping="Wrap" Text="Division:" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="93,31,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Division1"></ComboBoxItem>
+        <ComboBox Name="DivList1" HorizontalAlignment="Left" Margin="93,31,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Name="Div1Option" Content="Division1"></ComboBoxItem>
             <ComboBoxItem Content="Division2"></ComboBoxItem>
             <ComboBoxItem Content="Division3"></ComboBoxItem>
         </ComboBox>
