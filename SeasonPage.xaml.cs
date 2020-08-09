@@ -54,7 +54,18 @@ namespace EDSLPrototypeFinal
             DateList.Visibility = Visibility.Visible;
             removeDateButton.Visibility = Visibility.Visible;
             
-
+        }
+        private void buttonclickCreateDraw(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("The draw has been created");
+        }
+        private void buttonclickSaveDates(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Dates saved");
+        }
+        private void buttonclickSaveSeason(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Season saved");
         }
     }
 

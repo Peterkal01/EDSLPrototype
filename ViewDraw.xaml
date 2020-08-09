@@ -45,7 +45,7 @@
         <TextBlock Name="LadderHeader" HorizontalAlignment="Left" Margin="220,5,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="24" Text="EDSL 2019 - 2020 Division 1 Ladder" VerticalAlignment="Top" Visibility="Hidden"/>
         <Frame x:Name="Cover" HorizontalAlignment="Left" Height="401" Margin="218,62,0,0" VerticalAlignment="Top" Width="659" NavigationUIVisibility="Hidden" Background="White" Visibility="Hidden"/>
         <Image x:Name="Ladder" Margin="221,105,258,221" Source="LadderExample.JPG" Stretch="Fill" Grid.ColumnSpan="2" Visibility="Hidden"/>
-        <Button Content="Print Reports" HorizontalAlignment="Left" Margin="216,509,0,0" VerticalAlignment="Top" Width="74" Grid.Column="1"/>
+        <Button Content="Print Reports" HorizontalAlignment="Left" Margin="216,509,0,0" VerticalAlignment="Top" Width="74" Grid.Column="1" Click="buttonclickPrintReports"/>
 
 
 

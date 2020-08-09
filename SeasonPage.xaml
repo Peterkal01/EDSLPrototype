@@ -15,8 +15,8 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="152,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.046,0.739"/>
         <Separator HorizontalAlignment="Left" Height="100" Margin="10,96,0,0" VerticalAlignment="Top" Width="956"/>
         <TextBlock Name="StartDate" Visibility="Hidden" HorizontalAlignment="Left" Margin="93,260,0,0" TextWrapping="Wrap" Text="Start Date:" VerticalAlignment="Top"/>
-        <Button Name="saveDatesButton" Visibility="Hidden" Content="Save Dates" HorizontalAlignment="Left" Margin="871,462,0,0" VerticalAlignment="Top" Width="95" Height="26"/>
-        <Button Name="saveSeasonButton" Visibility="Hidden" Content="Save Season" HorizontalAlignment="Left" Margin="871,506,0,0" VerticalAlignment="Top" Width="95" Height="26"/>
+        <Button Name="saveDatesButton" Visibility="Hidden" Content="Save Dates" HorizontalAlignment="Left" Margin="871,462,0,0" VerticalAlignment="Top" Width="95" Height="26" Click="buttonclickSaveDates"/>
+        <Button Name="saveSeasonButton" Visibility="Hidden" Content="Save Season" HorizontalAlignment="Left" Margin="871,506,0,0" VerticalAlignment="Top" Width="95" Height="26" Click="buttonclickSaveSeason"/>
         <TextBlock HorizontalAlignment="Left" Margin="136,71,0,0" TextWrapping="Wrap" Text="or" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="16,111,0,0" TextWrapping="Wrap" Text="Select Existing Season:" VerticalAlignment="Top"/>
         <ComboBox HorizontalAlignment="Left" Margin="152,105,0,0" VerticalAlignment="Top" Width="120">
@@ -47,7 +47,7 @@
 
         <TextBox Name="enterDates" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="170,260,0,0" TextWrapping="Wrap" Text="DD/MM/YYYY" VerticalAlignment="Top" Width="120"/>
         <Button Name="removeDateButton" Visibility="Hidden" Content="Remove" HorizontalAlignment="Left" Margin="534,491,0,0" VerticalAlignment="Top" Width="75" Click="buttonclickRemoveDate"/>
-        <Button Name="createDrawButton" Visibility="Hidden" Content="Create Draw" HorizontalAlignment="Left" Margin="871,417,0,0" VerticalAlignment="Top" Width="95" Height="26"/>
+        <Button Name="createDrawButton" Visibility="Hidden" Content="Create Draw" HorizontalAlignment="Left" Margin="871,417,0,0" VerticalAlignment="Top" Width="95" Height="26" Click="buttonclickCreateDraw"/>
         <TextBlock FontSize="24" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Setup Season" VerticalAlignment="Top" FontWeight="Bold" Height="38" Width="162" Margin="0,-7,0,0"/>
 
 

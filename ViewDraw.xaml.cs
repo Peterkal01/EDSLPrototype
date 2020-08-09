@@ -45,7 +45,10 @@ namespace EDSLPrototypeFinal
             Cover.Visibility = Visibility.Visible;
             Cover2.Visibility = Visibility.Visible;
         }
-
+        private void buttonclickPrintReports(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Reports have been sent to your printer ");
+        }
 
 
     }
