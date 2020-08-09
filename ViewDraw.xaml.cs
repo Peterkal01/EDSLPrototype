@@ -32,24 +32,30 @@ namespace EDSLPrototypeFinal
 
         private void buttonclickDraw(object sender, RoutedEventArgs e)
         {
-            Draw.Visibility = Visibility.Visible;
-            DrawHeader.Visibility = Visibility.Visible;
+           
+            String fileName2 = "C:\\Users\\peter\\OneDrive - Swinburne University\\Diploma\\James\\Sem2\\EDSLPrototype\\Division1_Draw.pdf";
+            System.Diagnostics.Process process2 = new System.Diagnostics.Process();
+            process2.StartInfo.FileName = fileName2;
+            process2.Start();
+            process2.WaitForExit();
 
         }
 
 
         private void buttonClickLadder(object sender, RoutedEventArgs e)
         {
-            Ladder.Visibility = Visibility.Visible;
-            LadderHeader.Visibility = Visibility.Visible;
-            Cover.Visibility = Visibility.Visible;
-            Cover2.Visibility = Visibility.Visible;
+            String fileName2 = "C:\\Users\\peter\\OneDrive - Swinburne University\\Diploma\\James\\Sem2\\EDSLPrototype\\LadderExample.pdf";
+            System.Diagnostics.Process process2 = new System.Diagnostics.Process();
+            process2.StartInfo.FileName = fileName2;
+            process2.Start();
+            process2.WaitForExit();
         }
         private void buttonclickPrintReports(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Reports have been sent to your printer ");
         }
 
+       
 
     }
 }
