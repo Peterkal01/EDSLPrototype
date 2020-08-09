@@ -44,7 +44,7 @@ namespace EDSLPrototypeFinal
 
         private void buttonClickLadder(object sender, RoutedEventArgs e)
         {
-            String fileName2 = "C:\\Users\\peter\\OneDrive - Swinburne University\\Diploma\\James\\Sem2\\EDSLPrototype\\LadderExample.pdf";
+            String fileName2 = "C:\\Users\\peter\\OneDrive - Swinburne University\\Diploma\\James\\Sem2\\EDSLPrototype\\Division1_Ladder.pdf";
             System.Diagnostics.Process process2 = new System.Diagnostics.Process();
             process2.StartInfo.FileName = fileName2;
             process2.Start();
